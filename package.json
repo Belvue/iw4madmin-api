@@ -1,0 +1,25 @@
+{
+  "name": "iw4madmin-api",
+  "version": "0.0.1",
+  "description": "Wrapper for the iw4madmin API. Get details about your server!",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belvue/iw4madmin-api.git"
+  },
+  "keywords": [
+    "iw4m", "t6", "pluto", "plutonium", "iw4x", "iw4madmin", "t5"
+  ],
+  "author": "Liam Gaskell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Belvue/iw4madmin-api/issues"
+  },
+  "homepage": "https://github.com/Belvue/iw4madmin-api#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
