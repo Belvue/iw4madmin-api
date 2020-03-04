@@ -1,6 +1,6 @@
 {
   "name": "iw4madmin-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wrapper for the iw4madmin API. Get details about your server!",
   "main": "api.js",
   "scripts": {
