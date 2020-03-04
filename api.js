@@ -1,4 +1,5 @@
 const axios = require('axios');
+const ping = require('node-http-ping');
 axios.defaults.timeout = 3000;
 module.exports = function(config = {}) {
     var module = {};
@@ -11,6 +12,22 @@ module.exports = function(config = {}) {
                 resolve(obj);
             }).catch(err => {
                 reject(err);
+            })
+        });
+    }
+    /**
+     * WARNING! 
+     * EXPERIMENTAL FUNCTION
+     */
+    module.getServerPing = () => {
+        return new Promise((resolve, reject) => {
+            let url = config.base.replace(/(\:[0-9]+)/gm, '');
+            let port = config.port || 80;
+            console.log(url, port);
+            ping(url, port).then((time) => {
+                resolve(time);
+            }).catch(() => {
+                reject('cannot ping.');
             })
         });
     }
