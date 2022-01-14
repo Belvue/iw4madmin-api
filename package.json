@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/Belvue/iw4madmin-api#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "node-http-ping": "^0.3.1"
   }
 }
